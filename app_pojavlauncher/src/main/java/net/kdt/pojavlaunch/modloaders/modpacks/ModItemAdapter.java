@@ -20,7 +20,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.kdt.SimpleArrayAdapter;
 
-import net.kdt.pojavlaunch.PojavApplication;
+import net.kdt.pojavlaunch.LamApplication;
 import net.kdt.pojavlaunch.R;
 import net.kdt.pojavlaunch.Tools;
 import net.kdt.pojavlaunch.modloaders.modpacks.api.ModpackApi;
@@ -217,7 +217,7 @@ public class ModItemAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
                             mExtensionFuture = null;
                             setStateDetailed(mModDetail);
                         });
-                    }).startOnExecutor(PojavApplication.sExecutorService);
+                    }).startOnExecutor(LamApplication.sExecutorService);
                 }
             });
 

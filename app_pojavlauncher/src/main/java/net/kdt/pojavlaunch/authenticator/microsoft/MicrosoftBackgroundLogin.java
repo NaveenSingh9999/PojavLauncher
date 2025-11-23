@@ -1,6 +1,6 @@
 package net.kdt.pojavlaunch.authenticator.microsoft;
 
-import static net.kdt.pojavlaunch.PojavApplication.sExecutorService;
+import static net.kdt.pojavlaunch.LamApplication.sExecutorService;
 
 import android.util.ArrayMap;
 import android.util.Log;

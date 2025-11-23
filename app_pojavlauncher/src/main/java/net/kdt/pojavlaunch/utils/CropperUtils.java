@@ -18,7 +18,7 @@ import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.appcompat.app.AlertDialog;
 import androidx.fragment.app.Fragment;
 
-import net.kdt.pojavlaunch.PojavApplication;
+import net.kdt.pojavlaunch.LamApplication;
 import net.kdt.pojavlaunch.R;
 import net.kdt.pojavlaunch.Tools;
 import net.kdt.pojavlaunch.imgcropper.BitmapCropBehaviour;
@@ -62,7 +62,7 @@ public class CropperUtils {
             // (which has a typical screen density of 395 dpi)
             cropperListener.onCropped(cropImageView.crop((int) Tools.dpToPx(70)));
         });
-        PojavApplication.sExecutorService.execute(()->{
+        LamApplication.sExecutorService.execute(()->{
             CropperBehaviour cropperBehaviour = null;
             try {
                  cropperBehaviour = createBehaviour(cropImageView, contentResolver, selectedUri);

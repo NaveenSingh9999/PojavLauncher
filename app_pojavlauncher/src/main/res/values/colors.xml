@@ -1,15 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="control_button_color">#4CC4C4C4</color>
-    <color name="control_button_pressed_color">#4D000000</color>
-
-    <color name="minebutton_color">#57CC33</color>
-    <color name="background_app">#181818</color>
-    <color name="divider">@color/background_overlay</color>
-    <color name="background_overlay">#464646</color>
-    <color name="background_status_bar">#242424</color>
-    <color name="background_bottom_bar">#232323</color>
-
+    <!-- Modern Material Design Color Scheme for LamLauncher -->
+    
+    <!-- Primary Brand Colors -->
+    <color name="lam_primary">#6C63FF</color>
+    <color name="lam_primary_dark">#5548E6</color>
+    <color name="lam_primary_light">#8B84FF</color>
+    <color name="lam_accent">#00D9FF</color>
+    <color name="lam_accent_dark">#00B8D9</color>
+    
+    <!-- Control Button Colors -->
+    <color name="control_button_color">#55FFFFFF</color>
+    <color name="control_button_pressed_color">#886C63FF</color>
+    <color name="control_button_hover">#666C63FF</color>
+    
+    <!-- Legacy compatibility -->
+    <color name="minebutton_color">#6C63FF</color>
+    
+    <!-- Background Colors - Modern Dark Theme -->
+    <color name="background_app">#0F0F14</color>
+    <color name="background_card">#1A1A24</color>
+    <color name="background_elevated">#252532</color>
+    <color name="divider">#2A2A38</color>
+    <color name="background_overlay">#2A2A38</color>
+    <color name="background_status_bar">#0A0A0F</color>
+    <color name="background_bottom_bar">#0F0F14</color>
+    
+    <!-- Text Colors -->
     <color name="primary_text">#FFFFFF</color>
-    <color name="secondary_text">#B2B2B2</color>
+    <color name="secondary_text">#9FA2B4</color>
+    <color name="tertiary_text">#6B6E82</color>
+    
+    <!-- Semantic Colors -->
+    <color name="success">#00E676</color>
+    <color name="warning">#FFB300</color>
+    <color name="error">#FF5252</color>
+    <color name="info">#00D9FF</color>
+    
+    <!-- Surface Colors -->
+    <color name="surface_high">#2D2D3D</color>
+    <color name="surface_medium">#232330</color>
+    <color name="surface_low">#1A1A24</color>
 </resources>

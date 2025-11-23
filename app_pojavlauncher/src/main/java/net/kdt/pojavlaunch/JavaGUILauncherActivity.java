@@ -14,6 +14,8 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.Toast;
 
+import net.kdt.pojavlaunch.LamApplication;
+
 import androidx.activity.OnBackPressedCallback;
 import androidx.appcompat.app.AlertDialog;
 
@@ -164,7 +166,7 @@ public class JavaGUILauncherActivity extends BaseActivity implements View.OnTouc
                 startModInstaller(null, javaArgs);
             }else if(resourceUri != null) {
                 ProgressDialog barrierDialog = Tools.getWaitingDialog(this, R.string.multirt_progress_caching);
-                PojavApplication.sExecutorService.execute(()->{
+                LamApplication.sExecutorService.execute(()->{
                     startModInstallerWithUri(resourceUri);
                     runOnUiThread(barrierDialog::dismiss);
                 });

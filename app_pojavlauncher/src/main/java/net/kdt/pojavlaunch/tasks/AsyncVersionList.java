@@ -1,6 +1,6 @@
 package net.kdt.pojavlaunch.tasks;
 
-import static net.kdt.pojavlaunch.PojavApplication.sExecutorService;
+import static net.kdt.pojavlaunch.LamApplication.sExecutorService;
 import static net.kdt.pojavlaunch.utils.DownloadUtils.downloadString;
 
 import android.util.Log;

@@ -18,7 +18,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
-import net.kdt.pojavlaunch.PojavApplication;
+import net.kdt.pojavlaunch.LamApplication;
 import net.kdt.pojavlaunch.R;
 import net.kdt.pojavlaunch.Tools;
 import net.kdt.pojavlaunch.extra.ExtraCore;
@@ -238,7 +238,7 @@ public abstract class FabriclikeInstallFragment extends Fragment implements Modl
 
     private void updateLoaderVersions() {
         startLoading();
-        mLoaderVersionFuture = new SelfReferencingFuture(new LoadLoaderVersionsTask()).startOnExecutor(PojavApplication.sExecutorService);
+        mLoaderVersionFuture = new SelfReferencingFuture(new LoadLoaderVersionsTask()).startOnExecutor(LamApplication.sExecutorService);
     }
 
     private void updateLoaderSpinner() {
@@ -285,7 +285,7 @@ public abstract class FabriclikeInstallFragment extends Fragment implements Modl
 
     private void updateGameVersions() {
         startLoading();
-        mGameVersionFuture = new SelfReferencingFuture(new LoadGameVersionsTask()).startOnExecutor(PojavApplication.sExecutorService);
+        mGameVersionFuture = new SelfReferencingFuture(new LoadGameVersionsTask()).startOnExecutor(LamApplication.sExecutorService);
     }
 
     private void updateGameSpinner() {
